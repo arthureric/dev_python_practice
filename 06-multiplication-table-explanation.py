@@ -6,7 +6,7 @@
 dan = int(input("몇 단을 출력 하시겠습니까?"))
  # input의 경우 사용자가 숫자를 넣더라도 항상 문자로 변환시켜서 데이터를 담는다.
 for num in range(1,10):
-    print("{} * {} * {}".format(dan, num, dan * num))
+    print("{} * {} = {}".format(dan, num, dan * num))
 #문자열의 경우 " "+" "은 문자 연결로 표현된다.
 # 문자열에 "{} {}".format( , ) 를 하게될 경우, 뒤에 순서대로 앞의 괄호에 들어가진다.
 #문자열을 format으로 만들어 주겠다.
