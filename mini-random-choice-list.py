@@ -30,6 +30,8 @@ print(secure_random.choice(horses))
 list_format = ["g","f","e","x","r","l"]
 print("{}".format(random.choice(list_format)))
 
+# print(random.choice(list_format))
+### print 함수는 int등의 다양한 자료형을 string으로 변환시켜준다.
 
 
 #-----------------------------------------------------------------------------
@@ -53,9 +55,16 @@ print(random.randint(1,45),
 <아이디어 4 : def를 이용하여 lotto number 추출하기>
 """
 def lotto(lottonum):
-    print("Your lucky number, {}{}{}{}{}{}".format(lottonum))
+    print("Your lucky number, {},{},{},{},{},{}".format(lottonum))
 
-lottonum = [int(1<45)]
+### 여기에서 lottomun 이라는 변수의 범위(1~45)를 정의해야할 것 같은데,
+# lottonum = [1,2, ..., 45]
+lottonum = list(range(1,46))
+# lottonum(range(1,46))  >> 오류발생, lottonum is not defined
+
+# lottonum = [int(1<45)]
+# [1,2, ..., 45]
+
 
 #-----------------------------------------------------------------------------
 """
