@@ -5,4 +5,5 @@ number = int(number)
 
 for b in range(1, 10):
 
-    print(number, "*", b, "=",  number * b)
+    # print(number, "*", b, "=",  number * b)
+    print("{} * {} = {}".format(number,b,number*b))
